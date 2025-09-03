@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crazy Game Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background glow -->
+  <div class="bg-orb orb1"></div>
+  <div class="bg-orb orb2"></div>
+
+  <main class="shell">
+    <!-- HOME -->
+    <section id="home" class="view">
+      <header class="topbar">
+        <h1 class="logo">⚡ Crazy <span>Game Hub</span></h1>
+      </header>
+
+      <div class="cards">
+        <button class="card" data-game="hangman">
+          <div class="card-inner">
+            <div class="card-icon">🎭</div>
+            <h2>Hangman</h2>
+            <p>Guess the word, save the stickman.</p>
+          </div>
+        </button>
+
+        <button class="card" data-game="snake">
+          <div class="card-inner">
+            <div class="card-icon">🐍</div>
+            <h2>Snake</h2>
+            <p>Eat, grow, don’t crash.</p>
+          </div>
+        </button>
+
+        <button class="card" data-game="bricks">
+          <div class="card-inner">
+            <div class="card-icon">🧱</div>
+            <h2>Bricks</h2>
+            <p>Break ’em all to win.</p>
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <!-- GAME -->
+    <section id="game" class="view hidden">
+      <header class="topbar">
+        <button id="backBtn" class="btn ghost">← Home</button>
+        <div class="title-wrap">
+          <h2 id="gameTitle">Game</h2>
+        </div>
+        <div class="actions">
+          <button id="restartBtn" class="btn primary">↻ Restart</button>
+        </div>
+      </header>
+
+      <div id="stage" class="stage card-glass"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
